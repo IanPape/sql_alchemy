@@ -1,0 +1,19 @@
+/* static/styles.css */
+
+ul {
+    list-style-type: none; /* Remove default list-style */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Add some margin between list items */
+}
+
+a {
+    color: blue; /* Set link color to blue */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

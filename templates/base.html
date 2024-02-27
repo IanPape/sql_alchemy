@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base.html</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+    <div class="container"> 
+     <!-- Common header or navigation can go here -->
+
+    <!-- Content block, this will be overridden by child templates -->
+
+
+    <div class="content">
+        {%block content%}{%endblock%}
+
+    </div>
+    
+    <!--footer-->
+
+    </div>
+    
+</body>
+</html>
