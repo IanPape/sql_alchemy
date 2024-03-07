@@ -1,0 +1,22 @@
+<!-- list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}User Listing{% endblock %}
+
+{% block content %}
+    <h1>Users</h1>
+    <ul class="list-unstyled">
+        {% for user in users %}
+            <li>
+                <i class="fas fa-circle"></i> <!-- Font Awesome bullet point -->
+                <a href="{{ url_for('user_details', user_id=user.id) }}" class="user-link">
+                    {{ user.first_name }} {{ user.last_name }}
+                </a>
+            </li>
+            <br>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('new_user_form') }}" class="btn btn-primary">Add User</a>
+
+{% endblock %}
